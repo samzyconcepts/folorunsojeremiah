@@ -1,0 +1,310 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--max-width: 90%;
+	--bg-color: #1a1a1a;
+	--light-color: #3b4250;
+}
+
+body {
+	background-color: var(--bg-color);
+	color: #fff;
+	font-size: 18px;
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.container {
+	max-width: var(--max-width);
+	margin: 0 auto;
+}
+
+.l-heading {
+	font-size: 35px;
+}
+
+nav {
+	padding-top: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav ul {
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li a {
+	color: var(--bg-color);
+	-webkit-text-stroke: 1px #fff;
+	font-size: 36px;
+	font-weight: 700;
+	text-align: center;
+	padding: 0 24px;
+	text-decoration: none;
+}
+
+nav li a:hover,
+nav li a.active {
+	color: #fff;
+	transition: 0.2s ease;
+}
+
+nav li a.btn {
+	-webkit-text-stroke: unset;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 400;
+	padding: 20px 30px;
+	align-items: center;
+	background-color: var(--light-color);
+	border-radius: 8px;
+
+	display: flex;
+	align-items: center;
+}
+nav li a.btn img {
+	margin-left: 12px;
+}
+
+/* About section */
+#about {
+	display: flex;
+	align-items: center;
+	margin-top: 2rem;
+}
+
+#about h1 {
+	font-size: 3rem;
+	margin-top: 2.4rem;
+}
+
+#about .det {
+	line-height: 32.5px;
+	font-size: 1.25rem;
+	margin-top: 1rem;
+}
+
+#about .btn {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 400;
+	text-decoration: none;
+	margin-top: 2rem;
+	padding: 20px 30px;
+	background-color: var(--light-color);
+	border-radius: 8px;
+	display: inline-flex;
+	align-items: center;
+}
+
+#about .btn img {
+	margin-left: 12px;
+}
+
+/* Case studies section */
+#case {
+	margin-top: 2rem;
+}
+.std {
+	margin: 2rem auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.std1,
+.std2,
+.std3 {
+	padding: 21px;
+	border: 1px solid transparent;
+	cursor: pointer;
+}
+.std1:hover,
+.std2:hover,
+.std3:hover {
+	border: 1px solid rgba(248, 248, 248, 0.5);
+	border-radius: 8px;
+	transition: border 0.4s ease-in-out;
+}
+.content-img {
+	background: url(img/iPhone\ 13.jpg) no-repeat;
+	border-radius: 8px;
+	height: 420px;
+	min-width: 350px;
+	object-position: center;
+}
+
+.content-des h3 {
+	margin-top: 1rem;
+	font-family: 'IBM Plex Sans';
+	font-weight: 500;
+	line-height: 1.7;
+}
+.content-des p {
+	color: rgba(248, 248, 248, 0.5);
+}
+
+/* Article section */
+#article {
+	margin-top: 100px;
+}
+.art {
+	width: 100%;
+	display: inline-flex;
+	margin-top: 12px;
+	flex-wrap: wrap;
+}
+
+.desc {
+	padding: 18px;
+	border: 1px solid rgba(248, 248, 248, 0.2);
+	border-radius: 8px;
+	flex: 1;
+	cursor: pointer;
+}
+
+.desc1 {
+	margin-right: 12px;
+}
+.desc h3 {
+	font-weight: 500;
+	line-height: 2;
+}
+.desc p {
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 1.7;
+	color: #f8f8f8;
+	opacity: 0.5;
+}
+
+.desc .link {
+	margin-top: 50px;
+}
+.desc .link a {
+	text-decoration: none;
+	color: #f8f8f8;
+}
+
+/* Section: Design Shots */
+#design {
+	margin-top: 2rem;
+}
+.shots {
+	margin: 2rem auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.shot1,
+.shot2,
+.shot3 {
+	padding: 21px;
+	border: 1px solid transparent;
+	cursor: pointer;
+}
+.shot1:hover,
+.shot2:hover,
+.shot3:hover {
+	border: 1px solid rgba(248, 248, 248, 0.5);
+	border-radius: 8px;
+	transition: border 0.4s ease-in-out;
+}
+.content-img {
+	background: url(img/iPhone\ 13.jpg) no-repeat;
+	border-radius: 8px;
+	height: 420px;
+	min-width: 350px;
+	object-position: center;
+}
+
+.content-des h3 {
+	margin-top: 1rem;
+	font-family: 'IBM Plex Sans';
+	font-weight: 500;
+	line-height: 1.7;
+}
+.content-des p {
+	color: rgba(248, 248, 248, 0.5);
+}
+
+/* Section: Appreciation */
+#appreciation {
+	margin-top: 2rem;
+}
+
+.app > p {
+	margin-top: 1rem;
+	font-size: 23px;
+	line-height: 1.7;
+}
+.person {
+	margin-top: 2rem;
+	display: flex;
+	align-items: center;
+}
+.person img {
+	max-height: 75px;
+	max-width: 75px;
+	background-color: #f8f8f8;
+	border-radius: 50%;
+	margin-right: 1rem;
+}
+
+.des h1 {
+	font-weight: 500;
+	font-size: 25px;
+}
+.des p {
+	margin-top: 12px;
+	font-size: 20px;
+	color: rgba(248, 248, 248, 0.5);
+}
+
+/* Section: Footer */
+.det {
+	margin-top: 100px;
+}
+
+.det .email a {
+	font-family: IBM Plex Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 21px;
+	line-height: 1.7;
+	color: rgba(248, 248, 248, 0.5);
+}
+
+.icon-link {
+	margin-top: 1rem;
+	display: inline-flex;
+	flex-wrap: wrap;
+}
+.icon-link > a {
+	margin-right: 12px;
+}
+
+.ref {
+	height: 100px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #f8f8f8;
+}
+
+.ref p {
+	font-style: normal;
+	font-weight: 300;
+}
